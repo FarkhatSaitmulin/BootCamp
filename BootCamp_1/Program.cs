@@ -36,7 +36,7 @@ Console.WriteLine($"time = {sw.ElapsedMilliseconds}");
 Console.WriteLine(max); */
 
 int size = 1_000_000;
-int m = 30_000;
+int m = 15_000;
 int[] array = Enumerable.Range(1, size)
                          .Select(item => Random.Shared.Next(10))
                          .ToArray();
@@ -46,7 +46,7 @@ int[] array = Enumerable.Range(1, size)
 Stopwatch sw = new();
 sw.Start();
 
-int max = 0;
+/* int max = 0;
 for (int i = 0; i < array.Length - m; i++)
 {
     int t = 0;
@@ -57,7 +57,7 @@ for (int i = 0; i < array.Length - m; i++)
 sw.Stop();
 
 Console.WriteLine($"time = {sw.ElapsedMilliseconds}");
-Console.WriteLine($"Способ 1: {max}");
+Console.WriteLine($"Способ 1: {max}"); */
 
 
 
